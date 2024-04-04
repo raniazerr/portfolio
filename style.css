@@ -54,7 +54,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #F7316F;
+    background: #ff004f;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -76,7 +76,7 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span{
-    color: #F7316F;
+    color: #ff004f;
 }
 
 .container nav p {
@@ -86,7 +86,7 @@ nav ul li a:hover::after{
 .container nav p span{
     font-size: 24px;
     font-weight: bold;
-    color: #F7316F;
+    color: #ff004f;
 }
 
 /* about */
@@ -134,7 +134,7 @@ nav ul li a:hover::after{
 
 
 .about-col-2-list i{
-    color: #F7316F;
+    color: #ff004f;
     font-size: 50px;
     margin-bottom: 40px;
     margin-left: 5px;
@@ -155,7 +155,7 @@ nav ul li a:hover::after{
     display: inline-block; 
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #F7316F;
+    border: 1px solid #ff004f;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -186,7 +186,7 @@ nav ul li a:hover::after{
 }
 
 .btn:hover {
-    background: #F7316F;
+    background: #ff004f;
 }
 
 /* stages */
@@ -217,7 +217,7 @@ nav ul li a:hover::after{
     content:'';
     width: 0;
     height: 3px;
-    background: #F7316F;
+    background: #ff004f;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -251,7 +251,7 @@ nav ul li a:hover::after{
     display: inline-block; 
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #F7316F;
+    border: 1px solid #ff004f;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -260,7 +260,7 @@ nav ul li a:hover::after{
 }
 
 .btn-container:hover{
-    background: #F7316F;
+    background: #ff004f;
 }
 
 /* projets */
@@ -311,7 +311,7 @@ nav ul li a:hover::after{
 
 .projets-list div:hover{
     text-decoration: none !important;
-    background-color: #F7316F;
+    background-color: #ff004f;
     transform: translateY(-10px);
 }
 
@@ -468,7 +468,7 @@ a{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #F7316F);
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -491,7 +491,7 @@ a{
 
 .layer a{
     margin-top: 20px;
-    color: #F7316F;
+    color: #ff004f;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -571,7 +571,7 @@ a{
 }
 
 .contact-left p i{
-    color: #F7316F;
+    color: #ff004f;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -590,13 +590,13 @@ a{
 }
 
 .social-icons a:hover{
-    color: #F7316F;
+    color: #ff004f;
     transform: translateY(-5px);
 }
 
 .btn.btn2{
     display: inline-block;
-    background: #F7316F;
+    background: #ff004f;
 }
 
 .contact-right{
@@ -644,7 +644,7 @@ nav .fa-solid{
         font-size: 25px;
     }
     nav ul{
-        background: #F7316F;
+        background: #ff004f;
         position: fixed;
         top: 0;
         right: -200px;
