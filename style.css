@@ -510,6 +510,52 @@ a{
     height: 100%;
 }
 
+/* responsif */
+
+@media only screen and (max-width: 600px){
+    .timeline{
+        margin: 50px auto;
+    }
+
+    .timeline::after{
+        left: -10px;
+    }
+
+    .container2{
+        width: 90%; 
+        padding: 10px; 
+        margin: 0 auto; 
+    }
+
+    .text-box{
+        font-size: 14px; 
+        padding: 15px; 
+    }
+
+    .veille-image{
+        width: 30px; 
+        top: 25px; 
+    }
+
+    .text-box small{
+        margin-bottom: 10px;
+    }
+
+    .right-container{
+        left: 0;
+    }
+
+    .left-container img{
+        left: -45px;
+    }
+
+    .left-container-arrow, .right-container-arrow{
+        border-right: 15px solid #454446; 
+        border-left: 0;
+        left: -15px;
+        top: 18px; 
+    }
+}
 /* contact */
 
 .contact-left{
@@ -584,7 +630,7 @@ nav .fa-solid{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(#);
+        background-image: url(images/image_CV-phone.png);
     }
     .header-text{
         margin-top: 100%;
@@ -618,4 +664,19 @@ nav .fa-solid{
         left: 25px;
         cursor: pointer;
     }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+
+
 }
