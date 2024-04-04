@@ -1,0 +1,367 @@
+<!-- Notes:
+    Modifier "Tableau de compétences"
+    Partie "Projets" avec les applications de madame chataing + lien vers gitlab
+    Parler à l'oral de stage 2e année : phrase pour introduire mon stage
+    Mettre dans projets mon rôle de "développeur" pour SCRUM / préciser travail en groupe
+    Lien rapport de stage pour 1ère année 
+    Pour le tableau de compétence : modifier partie "cours" avec les TP de madame chataing-->
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-esquive="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+        <title>Portfolio - Rania ZERAMDINI</title>
+        <link rel="stylesheet" href="style.css">  
+        <script src="https://kit.fontawesome.com/95f189d14b.js" crossorigin="anonymous"></script>  <!-- accéder aux icones -->
+    </head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+            
+                <p><span>Portfolio</span> de Rania</p>
+                
+                <ul id="sidemenu">
+                    <li><a href="#header">Accueil</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#stages">Stages</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#competences">Tableau de Compétences</a></li>
+                    <li><a href="#veille">Veille</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Etudiante en BTS SIO option SLAM</p>
+                <h1>Bonjour, je suis <span>Rania</span>.</h1>
+            </div>
+        </div>
+    </div>
+   <!-- about me -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-2">
+                    <h1 class="sub-title">À propos</h1>
+                    <div class="about-col-2-list">
+                    <br>
+                    <br>
+                    
+                <i class="fa-solid fa-location-dot"></i> 
+                <a href="#" class="btn2">
+                <span>69100 Villeurbanne</span>
+                </a>
+                <br>
+                <i class="fa-solid fa-envelope"></i> 
+                <a href="#" class="btn2">
+                <span>rania0270@outlook.fr</span>
+                </a>
+                <br>
+
+                <p>Titulaire du permis B</p>
+            
+                <br>
+                <br>
+                
+                <p>Née le 27/12/2002</p>
+            
+            
+                <br>
+                    <i class="fa-solid fa-file"></i>
+                    <a href="#" class="btn">
+                    <span>Télécharger mon CV</span>
+                    </a>
+                <br>
+                <br>
+                
+                <br>
+                <br>
+                <br>
+                </div>
+            </div>
+
+                <div class="about-col-1">
+                    <img src="images/LOGOS2.png">
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- stages -->
+
+    <div id="stages">
+        <div class="container">
+            <h1 class="sub-title">Mes Stages</h1>
+            <br>
+            <br>
+            <div class="content">
+                <div class="desc">
+            <p>Au cours de ma formation, j'ai eu l'opportunité enrichissante de réaliser deux stages qui m'ont permis d'acquérir une expérience pratique essentielle.</p>
+            </div>   
+            <br>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('1')">1ère année</p>
+                <p class="tab-links" onclick="opentab('2')">2e année </p>
+            </div>
+            <div class="tab-contents active-tab" id="1">
+                <ul>
+                    <li><span> Next JS</span><br>➢ Refonte du site Verif.com</li>
+                    <li><span> NoSQL</span><br>➢ Création d'une base de données sur MongoDB<br>➢ Déploiement de la base de données</li>
+                    <li><span> SQL</span><br>➢ Création et administration d'une base de données</li>
+                </ul>
+                <a href="#" class="btn-container">
+                    <span>Rapport de stage</span>
+                    </a>
+            </div>
+            <div class="tab-contents" id="2">
+                <ul>
+                    <li><span> Chamilo</span><br>➢ Déploiement du tutoriel de e-learning<br>➢ Accompagnement des utilisateurs</li>
+                    <li><span> SQL</span><br>➢ Modification de scripts de sauvegarde</li>
+                    <li><span> PHP</span><br>➢ Modifications des données à récupérer d'un formulaire en PHP</li>
+                </ul>
+                <a href="#" class="btn-container">
+                    <span>One Note stage</span>
+                    </a>
+            </div>
+        </div>     
+        </div>
+    </div>
+
+    <!-- projets -->
+    
+    <div id="projets">
+        <div class="container">
+            <h1 class="sub-title">Projets</h1>
+            <div class="projets-list">
+                <a href="https://github.com/raniazerr/Gestion_Materiel.git">
+                <div>
+                    <i class="fa-regular fa-hashtag"></i>
+                    <h2>Gestion Materiel</h2>
+                    <p>Application C# permettant de gérer le matériel du club Lyon Palme. Mon rôle: développeuse</p>
+                    <br>
+                    <p>Lien GitHub</p>
+                </div>
+                </a>
+                <a href="https://github.com/raniazerr/Gestion_Adherents.git">
+                <div>
+                    <i class="fa-brands fa-laravel"></i>
+                    <h2>Gestion Adhérents</h2>
+                    <p>Application Laravel permettant de gérer les inscriptions des adhérents du club Lyon Palme. Méthode de gestion de projet Scrum (développeuse).</p>
+                    <br>
+                    <p>Lien GitHub</p>
+                </div>
+                </a>
+                <a href="https://github.com/raniazerr/Sondage.git">
+                <div>
+                    <i class="fa-brands fa-vuejs"></i>
+                    <h2>Sondage</h2>
+                    <p>Web Service permettant de réaliser des sondages et voter pour les adhérents du club Lyon Palme.</p>
+                    <br>
+                    <p>Lien GitHub</p>
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- compétences -->
+    
+    <div id="competences">
+        <div class="container">
+            <h1 class="sub-title">Compétences</h1>
+            <div class="tableau">               
+                    <img src="images/tableau-2.png">
+            </div>
+        </div>
+    </div>
+
+    <!-- veille -->
+
+        <div id="veille">
+            <div class="container">
+                <h1 class="sub-title">Veille Technologique</h1>
+                <div class="timeline">
+                    <div class="container2 left-container">
+                        <img src="images/flèche.png" class="veille-image">
+                        <div class="text-box">               
+                            <h2>CHU Québec - Cyberattaque rançongiciel</h2> 
+                            <small>24 Octobre 2023</small> 
+                            <p>• Vol de données (nom, prénom, groupe sanguin, etc..) de 168 patients
+                            <br>
+                            <bR>• Possibilité d'aller plus loin en usurpant l'identité
+                            </p> <!-- https://www.noovo.info/video/pres-de-200-patients-du-chu-de-quebec-vises-par-des-pirates-informatiques.html -->
+                            <span class="left-container-arrow"></span>
+                        </div>
+                    </div>
+                    <div class="container2 right-container">
+                        <!-- <img src="images/flèche.png"> -->
+                        <div class="text-box">               
+                            <h2>Cinq hôpitaux de l'Ontario</h2>
+                            <small>26 Octobre 2023</small>
+                            <p>• Interpol et le FBI mobilisés
+                            <bR>• Cyberattaque contre leur fournisseur de services informatique
+                            <bR>• Vol de données personnelles : patients, employés
+                            <bR>• Déplacement de rendez-vous
+                            </p> <!-- https://www.journaldemontreal.com/2023/10/31/les-donnees-des-patients-de-cinq-hopitaux-pirates-des-rendez-vous-en-radiotherapie-deplaces -->
+                                <span class="right-container-arrow"></span>
+                        </div>
+                    </div>
+                    <div class="container2 left-container">
+                        <img src="images/flèche.png" class="veille-image">
+                        <div class="text-box">               
+                            <h2>Dirigeant d'une entreprise de cybersécurité qui piratait des hôpitaux</h2> 
+                            <small>21 Novembre 2023</small> 
+                            <p>• Vikas Singla, ancien directeur opérationnel de l'entreprise Securolytics
+                            <bR>• Risque de vies et perte financière de 819 000$
+                            <bR>• Vol de données personnelles de 200 patients
+                            <bR>• Affiches dans l'hôpital des informations volés comme moyen vendeur
+                            </p> <!-- https://www.clubic.com/actualite-509704-pour-booster-son-business-le-dirigeant-d-une-entreprise-de-cybersecurite-piratait-des-hopitaux.html -->
+                                
+                            <span class="left-container-arrow"></span>
+                        </div>
+                    </div>
+                    <div class="container2 right-container">
+                        <!-- <img src="images/flèche.png"> -->
+                        <div class="text-box">               
+                            <h2>CHU de Nantes victime d'une cyberattaque</h2>
+                            <small>15 Janvier 2024</small>
+                            <p>• Cyberattaque ayant durée 2 jours
+                            <bR>• Attaque de type Ddos: les serveurs ont été submérger provoquant une perte de service
+                            <bR>• Site internet indisponible = pas de prise de rdv
+                            </p> <!-- https://www.lefigaro.fr/nantes/le-chu-de-nantes-victime-d-une-cyberattaque-pendant-deux-jours-20240116 -->
+                            <span class="right-container-arrow"></span>
+                        </div>
+                    </div>
+                    <div class="container2 left-container">
+                        <img src="images/flèche.png" class="veille-image">
+                        <div class="text-box">               
+                            <h2>Dizaine d'hôpitaux paralysés en Roumanie</h2>
+                            <small>14 Février 2024</small>
+                            <p>• Plusieurs hôpitaux ont été frappés par le ransomware BackMydata​​
+                            <br>
+                            <bR>• Demande de rançon de 3,5 Bitcoins soit 160 000€
+                            </p> <!-- https://www.linformaticien.com/magazine/cybersecurite/61681-ransomware-des-dizaines-d-hopitaux-paralyses-en-roumanie.html-->
+                            <span class="left-container-arrow"></span>
+                        </div>
+                    </div>
+                    <div class="container2 right-container">
+                        <!-- <img src="images/flèche.png"> -->
+                        <div class="text-box">               
+                            <h2>Hôpital d'Armantières</h2>
+                            <small>29 Février 2024</small>
+                            <p>• Urgences fermés 24h
+                                <br>
+                            <bR>• Retour au papier pour les données médicales en attendant
+                            </p> <!-- https://www.lemondeinformatique.fr/actualites/lire-en-vue-des-jo-2024-sncf-connectettech-elargit-son-bug-bounty-93387.html -->
+                            <span class="right-container-arrow"></span>
+                        </div>
+                    </div>
+                    
+                </div>
+                    <!-- les 2 articles -->
+                    <div class="contenu-list">
+                        <div class="attaques">
+                            <img src="images/article1.png">
+                            <div class="layer">
+                                <h3>Attaque de l'hôpital d'Armantière</h3>
+                                <p>• Ransomware avec les données de 950 000 patients volés
+                                <bR>• +18 go de données diffusés après le refus de payer
+                                <bR>• Impression de plusieurs messages de ransomware
+                                <bR>• Suspicion sur le groupe Lockbit, attaque revendiquée sur le dark web par un nouveau groupe: Blackout 
+                                <bR>• Même outils et même système de chantage que Lockbit
+                                </p>
+                                <a href="https://www.linformaticien.com/magazine/cybersecurite/61754-hopital-d-armentieres-les-donnees-de-300-000-patients-ont-ete-volees.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="attaques">
+                            <img src="images/yes.webp">
+                            <div class="layer">
+                                <h3>Attaque de Roumanie</h3>
+                                <p>• 15 hôpitaux touchés
+                                <bR>• Ransomware BackMyData: variante de rançongiciel qui chiffre les fichiers (...)
+                                <bR>• Pas de grandes dégâts grâce aux anciennes sauvegardes
+                                <bR>• Travail en collaboration avec le Centre National de Sécurité
+                                <bR>• Auteur inconnu
+                                </p>
+                                <a href="https://lepetitjournal.com/bucarest/actualites/une-cyberattaque-paralyse-15-hopitaux-en-roumanie-378776"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>                
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    <!-- contact -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contactez-moi</h1>
+                    <p><i class="fa-solid fa-envelope"></i> rania0270@outlook.fr</p>
+                    <p><i class="fa-solid fa-phone"></i> 07.81.79.00.68</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/rania-zeramdini-7b283b20a"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Nom" placeholder="Nom" required>
+                        <input type="email" name="Email" placeholder="Email" required>
+                        <textarea name="message" rows="6" placeholder="Votre Message"></textarea>
+                        <button type="submit" class="btn btn2">Soumettre</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- script js (pour le moment cst juste le fonctionnement des cliques pour stage 1 et 2 -->
+    
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents"); 
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <!-- site responsif-->
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+</html>
