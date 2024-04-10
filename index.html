@@ -110,7 +110,7 @@
             </div>
             <div class="tab-contents active-tab" id="1">
                 <ul>
-                    <li><span> Next JS</span><br>➢ Refonte du site Verif.com</li>
+                    <li><span> Méthodologie SCRUM</span><br>➢ Réunions de sprint planning</li>
                     <li><span> NoSQL</span><br>➢ Création d'une base de données sur MongoDB<br>➢ Déploiement de la base de données</li>
                     <li><span> SQL</span><br>➢ Création et administration d'une base de données</li>
                 </ul>
@@ -326,7 +326,7 @@
         </div>
     </div>
 
-    <!-- script js (pour le moment cst juste le fonctionnement des cliques pour stage 1 et 2 -->
+    <!-- script js des cliques pour stage 1 et 2 -->
     
     <script>
 
@@ -362,15 +362,16 @@
 
     </script>
 
+<!-- contact -->
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwNEbDrSE2r7oZ4HFtz7rMnweGd4GoF93FyMdX2Sg4q8d9ixmQS7u_Ll6TjNznUBt9_/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzAAJitidP5JUHYD1lpODFhqLN5FHA-9kCtke8ztlt-RQqsNM1T1bZC2ShEicEMxfQQ/exec'
             const form = document.forms['submit-to-google-sheet']
 
             form.addEventListener('submit', e => {
                 e.preventDefault()
-                fetch(scriptURL, { methode: 'POST', body: new FormData(form)})
-                .then(response => console.log('Success!', response))
-                .catch(error => console.error('Error!', error.message))
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Message envoyé !', response))
+                .catch(error => console.error('Erreur', error.message))
             })
     </script>
 </body>
