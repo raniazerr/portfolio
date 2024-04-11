@@ -510,6 +510,41 @@ a{
     height: 100%;
 }
 
+.middle-container {
+    display: flex;
+    position: relative;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center;
+    width: 70%;
+    text-align: center;
+    margin: 50px auto; /* Marge supérieure pour espacement */
+}
+
+.middle-container p {
+    text-align: left;
+}
+
+.middle-container a.layer-icon {
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+}
+
+.middle-container a.layer-icon:hover {
+    color: #fff; /* Couleur du texte au survol */
+    background-color: #ff004f; /* Couleur de fond au survol */
+}
+
+
+
 /* responsif */
 
 @media only screen and (max-width: 600px){
@@ -615,7 +650,7 @@ form input, form textarea{
     border-radius: 6px;
 }
 
-form btn2{
+form btn{
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
