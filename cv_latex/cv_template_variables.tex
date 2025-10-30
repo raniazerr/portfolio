@@ -1,0 +1,247 @@
+\documentclass[]{deedy-resume-reversed}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{svg}
+\pagestyle{fancy}
+\fancyhf{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     VARIABLES À MODIFIER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% INFORMATIONS PERSONNELLES
+\newcommand{\cvNom}{Prénom Nom}
+\newcommand{\cvEmail}{email@example.com}
+\newcommand{\cvTelephone}{+33 X XX XX XX XX}
+\newcommand{\cvSiteWeb}{www.votresite.com}
+\newcommand{\cvSiteWebURL}{https://www.votresite.com}
+\newcommand{\cvGithub}{github.com/username}
+\newcommand{\cvGithubURL}{https://github.com/username}
+\newcommand{\cvLinkedin}{linkedin.com/in/username}
+\newcommand{\cvLinkedinURL}{https://www.linkedin.com/in/username/}
+
+% PROFIL / RÉSUMÉ
+\newcommand{\cvProfil}{
+Étudiant(e)-ingénieur(e) en [année] à [École], spécialisé(e) en [spécialisation], je cherche [type d'opportunité] pour [période]. Passionné(e) par [domaine d'intérêt], j'apprécie [compétences/intérêts]. Désireux(se) de contribuer à des projets à fort impact en [secteur], j'apporte [qualités personnelles].
+}
+
+% EXPÉRIENCE 1
+\newcommand{\expUnEntreprise}{Entreprise A}
+\newcommand{\expUnPoste}{Poste (Type de contrat)}
+\newcommand{\expUnPeriode}{Mois Année – Mois Année}
+\newcommand{\expUnLieu}{Ville, Pays}
+\newcommand{\expUnTaches}{
+    \item Réalisation principale avec \textbf{technologies} et résultats mesurables.
+    \item Seconde contribution importante avec impact quantifiable.
+    \item Troisième réalisation technique ou métier.
+    \item Quatrième point si nécessaire.
+}
+
+% EXPÉRIENCE 2
+\newcommand{\expDeuxEntreprise}{Entreprise B}
+\newcommand{\expDeuxPoste}{Poste (Type de contrat)}
+\newcommand{\expDeuxPeriode}{Mois Année – Mois Année}
+\newcommand{\expDeuxLieu}{Ville, Pays}
+\newcommand{\expDeuxTaches}{
+    \item Première réalisation avec impact.
+    \item Seconde contribution technique.
+    \item Troisième réalisation.
+}
+
+% EXPÉRIENCE 3
+\newcommand{\expTroisEntreprise}{Entreprise C}
+\newcommand{\expTroisPoste}{Poste (Stage)}
+\newcommand{\expTroisPeriode}{Année}
+\newcommand{\expTroisLieu}{Ville, Pays}
+\newcommand{\expTroisTaches}{
+    \item Réalisation principale du stage.
+}
+
+% PROJET 1
+\newcommand{\projetUnNom}{Projet A}
+\newcommand{\projetUnTech}{Technologies utilisées}
+\newcommand{\projetUnDesc}{
+    \item Description de la réalisation principale.
+    \item Seconde caractéristique ou fonctionnalité.
+}
+
+% PROJET 2
+\newcommand{\projetDeuxNom}{Projet B}
+\newcommand{\projetDeuxTech}{Technologies utilisées}
+\newcommand{\projetDeuxDesc}{
+    \item Description de la réalisation.
+}
+
+% PROJET 3
+\newcommand{\projetTroisNom}{Projet C}
+\newcommand{\projetTroisTech}{Type de projet}
+\newcommand{\projetTroisDesc}{
+    \item Description courte du projet.
+}
+
+% FORMATION 1
+\newcommand{\formationUnEcole}{École Principale}
+\newcommand{\formationUnDiplome}{Master/Ingénieur Spécialité}
+\newcommand{\formationUnPeriode}{Année début – Année fin}
+\newcommand{\formationUnType}{Programme Grande École, Type de cursus}
+\newcommand{\formationUnCours}{Cours clé 1, Cours clé 2, Cours clé 3, Cours clé 4}
+
+% FORMATION 2
+\newcommand{\formationDeuxEcole}{École Secondaire}
+\newcommand{\formationDeuxDiplome}{Diplôme}
+\newcommand{\formationDeuxPeriode}{Année début – Année fin}
+\newcommand{\formationDeuxType}{Programme, Type de cursus}
+\newcommand{\formationDeuxCours}{Cours clé 1, Cours clé 2, Cours clé 3}
+
+% COMPÉTENCES TECHNIQUES
+\newcommand{\compLangages}{Python, Java, C++, SQL}
+\newcommand{\compBigData}{Technologies Big Data, Cloud, Certifications}
+\newcommand{\compWeb}{React, Django, HTML/CSS/JS}
+\newcommand{\compDevOps}{CI/CD, Docker, Kubernetes}
+
+% LANGUES
+\newcommand{\langueUn}{Français: Langue maternelle}
+\newcommand{\langueDeux}{Anglais: Niveau (B2/C1/C2)}
+\newcommand{\langueTrois}{Autre langue: Niveau}
+\newcommand{\langueQuatre}{Autre langue: Notions}
+
+% CENTRES D'INTÉRÊT
+\newcommand{\interetUn}{Domaine d'intérêt: Détails spécifiques}
+\newcommand{\interetDeux}{Sports: Liste des sports pratiqués}
+\newcommand{\interetTrois}{Engagement: Description de l'activité associative ou personnelle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     DÉBUT DU DOCUMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     NOM ET CONTACT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{\cvNom}{
+\raisebox{-0.15\height}{\includesvg[height=0.02\textwidth]{email_icon.svg}} \href{mailto:\cvEmail}{\cvEmail} \quad | \quad
+\raisebox{-0.15\height}{\includesvg[height=0.02\textwidth]{phone-solid.svg}} \cvTelephone \\
+\raisebox{-0.15\height}{\includesvg[height=0.02\textwidth]{globe-solid.svg}} \href{\cvSiteWebURL}{\cvSiteWeb} \quad | \quad
+\raisebox{-0.15\height}{\includesvg[height=0.02\textwidth]{github-brands-solid.svg}} \href{\cvGithubURL}{\cvGithub} \quad | \quad
+\raisebox{-0.15\height}{\includesvg[height=0.02\textwidth]{linkedin-brands-solid.svg}} \href{\cvLinkedinURL}{\cvLinkedin}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROFIL
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvProfil
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COLONNE 1 : EXPÉRIENCE & PROJETS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.60\textwidth}
+
+% EXPÉRIENCE
+\section{Expérience}
+
+\runsubsection{\expUnEntreprise}
+\descript{| \expUnPoste}
+\location{\expUnPeriode \hfill \expUnLieu}
+\vspace{\topsep}
+\begin{tightemize}
+\expUnTaches
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\expDeuxEntreprise}
+\descript{| \expDeuxPoste}
+\location{\expDeuxPeriode \hfill \expDeuxLieu}
+\begin{tightemize}
+\expDeuxTaches
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\expTroisEntreprise}
+\descript{| \expTroisPoste}
+\location{\expTroisPeriode \hfill \expTroisLieu}
+\begin{tightemize}
+\expTroisTaches
+\end{tightemize}
+\sectionsep
+
+% PROJETS
+\section{Projets}
+
+\runsubsection{\projetUnNom}
+\descript{| \projetUnTech}
+\begin{tightemize}
+\projetUnDesc
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\projetDeuxNom}
+\descript{| \projetDeuxTech}
+\begin{tightemize}
+\projetDeuxDesc
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\projetTroisNom}
+\descript{| \projetTroisTech}
+\begin{tightemize}
+\projetTroisDesc
+\end{tightemize}
+\sectionsep
+
+\textit{Plus de projets sur GitHub :} 
+\includesvg[height=0.02\textwidth]{github-brands-solid.svg} \href{\cvGithubURL}{\cvGithub}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COLONNE 2 : FORMATION & COMPÉTENCES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.33\textwidth}
+
+% FORMATION
+\section{Formation}
+
+\subsection{\formationUnEcole}
+\descript{\formationUnDiplome (\formationUnPeriode)}
+\textit{\formationUnType} \\
+\textbf{Cours clés :} \formationUnCours
+\sectionsep
+
+\subsection{\formationDeuxEcole}
+\descript{\formationDeuxDiplome (\formationDeuxPeriode)}
+\textit{\formationDeuxType} \\
+\textbf{Cours clés :} \formationDeuxCours
+\sectionsep
+
+% COMPÉTENCES TECHNIQUES
+\section{Compétences techniques}
+\textbf{Langages:} \compLangages \\
+\textbf{Big Data:} \compBigData \\
+\textbf{Web:} \compWeb \\
+\textbf{DevOps/MLOps:} \compDevOps
+\sectionsep
+
+% LANGUES
+\section{Langues}
+\textbf{\langueUn} \\
+\textbf{\langueDeux} \\
+\textbf{\langueTrois} \\
+\textbf{\langueQuatre}
+\sectionsep
+
+% CENTRES D'INTÉRÊT
+\section{Centres d'intérêt}
+\textbf{\interetUn} \\
+\textbf{\interetDeux} \\
+\textbf{\interetTrois}
+\sectionsep
+
+\end{minipage}
+
+\end{document}
+
+
+

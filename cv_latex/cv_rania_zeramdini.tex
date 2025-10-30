@@ -1,0 +1,203 @@
+\documentclass[]{deedy-resume-reversed}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{svg}
+\pagestyle{fancy}
+\fancyhf{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     VARIABLES À MODIFIER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% INFORMATIONS PERSONNELLES
+\newcommand{\cvNom}{Rania Zeramdini}
+\newcommand{\cvEmail}{rania0270@outlook.fr}
+\newcommand{\cvTelephone}{+33 7 81 79 00 68}
+\newcommand{\cvLocalisation}{Lyon et alentours}
+\newcommand{\cvPortfolio}{raniazerr.github.io/portfolio}
+\newcommand{\cvPortfolioURL}{https://raniazerr.github.io/portfolio/}
+\newcommand{\cvLinkedin}{linkedin.com/in/rania-zeramdini}
+\newcommand{\cvLinkedinURL}{https://www.linkedin.com/in/rania-zeramdini/}
+
+% PROFIL / RÉSUMÉ
+\newcommand{\cvProfil}{
+Étudiante en \textbf{Bachelor 3 Développement Full-Stack \& DevOps} à l'\textbf{IPSSI}, je recherche une \textbf{alternance ou un stage} en format saccadé (3 semaines en entreprise / 1 semaine de cours), \textbf{disponible dès que possible}. Idéalement de 2 mois pour valider mon année, mais ouverte à des durées plus courtes. Passionnée par la technologie et l'informatique, je suis déterminée à contribuer à des projets en \textbf{développement logiciel/application/web full-stack, UX/UI ou IA}. Autonome, perfectionniste et curieuse, j'apporte rigueur et enthousiasme pour relever de nouveaux défis techniques.
+}
+
+% EXPÉRIENCE 1
+\newcommand{\expUnEntreprise}{SITIV}
+\newcommand{\expUnPoste}{Formatrice Logiciel Interne (Stage)}
+\newcommand{\expUnPeriode}{2024}
+\newcommand{\expUnLieu}{Vénissieux}
+\newcommand{\expUnTaches}{
+    \item Conception et réalisation de formations sur des logiciels internes à l'entreprise.
+    \item Accompagnement personnalisé des utilisateurs pour faciliter l'adoption des outils.
+    \item Création de supports pédagogiques et documentation technique.
+}
+
+% EXPÉRIENCE 2
+\newcommand{\expDeuxEntreprise}{Altares}
+\newcommand{\expDeuxPoste}{Développeuse Web \& Base de Données (Stage)}
+\newcommand{\expDeuxPeriode}{2023}
+\newcommand{\expDeuxLieu}{Villeurbanne}
+\newcommand{\expDeuxTaches}{
+    \item Refonte complète du site \textbf{Verif.com} : amélioration de l'interface et des fonctionnalités.
+    \item Création et gestion d'une base de données \textbf{NoSQL} sur \textbf{MongoDB}.
+    \item Création et administration d'une base de données \textbf{SQL}, optimisation des requêtes.
+}
+
+% EXPÉRIENCE 3
+\newcommand{\expTroisEntreprise}{CHU de Saint-Denis}
+\newcommand{\expTroisPoste}{Secrétaire RH (Stage)}
+\newcommand{\expTroisPeriode}{2021}
+\newcommand{\expTroisLieu}{Saint-Denis}
+\newcommand{\expTroisTaches}{
+    \item Gestion administrative et support aux équipes RH.
+}
+
+% FORMATION 1
+\newcommand{\formationUnEcole}{IPSSI Grande École d'Informatique}
+\newcommand{\formationUnDiplome}{Bachelor 3 : Développement Full-Stack \& DevOps}
+\newcommand{\formationUnPeriode}{2025 – 2026}
+\newcommand{\formationUnType}{Formation en alternance}
+\newcommand{\formationUnCours}{JavaScript (ReactJS, Node.js, Angular), PHP 8 (Symfony), Dart/Flutter, Python, C\#, MariaDB, MongoDB, Sequelize, Docker, CI/CD, Agile, UX/UI}
+
+% FORMATION 2
+\newcommand{\formationDeuxEcole}{Les Chassagnes}
+\newcommand{\formationDeuxDiplome}{BTS SIO – Option SLAM}
+\newcommand{\formationDeuxPeriode}{2022 – 2024}
+\newcommand{\formationDeuxType}{Services Informatiques aux Organisations}
+\newcommand{\formationDeuxCours}{Développement d'applications, Bases de données, Réseaux}
+
+% FORMATION 3
+\newcommand{\formationTroisEcole}{Faculté Jean Moulin}
+\newcommand{\formationTroisDiplome}{1ère année LEA}
+\newcommand{\formationTroisPeriode}{2021 – 2022}
+
+% COMPÉTENCES TECHNIQUES
+\newcommand{\compLangages}{PHP (Laravel), JavaScript (Vue.js), Python, C\#, HTML5/CSS3}
+\newcommand{\compBDD}{SQL Server, MySQL, MongoDB}
+\newcommand{\compDevOps}{Git, GitHub, GitLab, Visual Studio, Trello}
+\newcommand{\compSecurity}{Kali Linux, VMWare, Ubuntu, Linux Debian}
+
+% LANGUES
+\newcommand{\langueUn}{Français: Langue maternelle}
+\newcommand{\langueDeux}{Anglais: Courant (C1)}
+\newcommand{\langueTrois}{Espagnol: Intermédiaire (A2)}
+\newcommand{\langueQuatre}{Coréen: Notions (A1)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     DÉBUT DU DOCUMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     NOM ET CONTACT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{\cvNom}{
+\raisebox{-0.15\height}{\includesvg[height=0.02\textwidth]{email_icon.svg}} \href{mailto:\cvEmail}{\cvEmail} \quad | \quad
+\raisebox{-0.15\height}{\includesvg[height=0.02\textwidth]{phone-solid.svg}} \cvTelephone \quad | \quad
+\raisebox{-0.15\height}{\includesvg[height=0.02\textwidth]{globe-solid.svg}} \cvLocalisation \\
+\raisebox{-0.15\height}{\includesvg[height=0.02\textwidth]{globe-solid.svg}} \href{\cvPortfolioURL}{\cvPortfolio} \quad | \quad
+\raisebox{-0.15\height}{\includesvg[height=0.02\textwidth]{linkedin-brands-solid.svg}} \href{\cvLinkedinURL}{\cvLinkedin}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROFIL
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvProfil
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COLONNE 1 : FORMATION & EXPÉRIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.60\textwidth}
+
+% FORMATION
+\section{Formation}
+
+\subsection{\formationUnEcole}
+\descript{\formationUnDiplome (\formationUnPeriode)}
+\textit{\formationUnType} \\
+\textbf{Cours clés :} \formationUnCours
+\sectionsep
+
+\subsection{\formationDeuxEcole}
+\descript{\formationDeuxDiplome (\formationDeuxPeriode)}
+\textit{\formationDeuxType} \\
+\textbf{Cours clés :} \formationDeuxCours
+\sectionsep
+
+\subsection{\formationTroisEcole}
+\descript{\formationTroisDiplome (\formationTroisPeriode)}
+\sectionsep
+
+% EXPÉRIENCE
+\section{Expérience}
+
+\runsubsection{\expUnEntreprise}
+\descript{| \expUnPoste}
+\location{\expUnPeriode \hfill \expUnLieu}
+\vspace{\topsep}
+\begin{tightemize}
+\expUnTaches
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\expDeuxEntreprise}
+\descript{| \expDeuxPoste}
+\location{\expDeuxPeriode \hfill \expDeuxLieu}
+\vspace{\topsep}
+\begin{tightemize}
+\expDeuxTaches
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\expTroisEntreprise}
+\descript{| \expTroisPoste}
+\location{\expTroisPeriode \hfill \expTroisLieu}
+\vspace{\topsep}
+\begin{tightemize}
+\expTroisTaches
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COLONNE 2 : COMPÉTENCES & LANGUES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.33\textwidth}
+
+% COMPÉTENCES TECHNIQUES
+\section{Compétences techniques}
+\subsection{Langages}
+\compLangages
+\sectionsep
+
+\subsection{Bases de données}
+\compBDD
+\sectionsep
+
+\subsection{DevOps \& Outils}
+\compDevOps
+\sectionsep
+
+\subsection{Système \& Sécurité}
+\compSecurity
+\sectionsep
+
+% LANGUES
+\section{Langues}
+\langueUn \\
+\langueDeux \\
+\langueTrois \\
+\langueQuatre
+\sectionsep
+
+\end{minipage}
+
+\end{document}
+
