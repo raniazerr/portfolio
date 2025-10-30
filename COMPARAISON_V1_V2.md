@@ -428,3 +428,5 @@ La **Version 2** représente une amélioration **majeure** sur tous les plans :
 *Comparaison réalisée en Octobre 2025*  
 *Portfolio de Rania Zeramdini*
 
+
+
